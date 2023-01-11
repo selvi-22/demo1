@@ -1,0 +1,16 @@
+## Create DOM Manipulation Exercise
+
+1. Shopping List Example
+* https://github.com/mdn/learning-area/blob/master/javascript/apis/document-manipulation/shopping-list-finished.html
+
+
+https://www.ibm.com/developerworks/library/wa-jsanddom-pr/sidefile1.html
+
+https://www.teaching-materials.org/javascript/exercises/dom.html
+
+# Exercises:
+http://www.asmarterwaytolearn.com/js/index-of-exercises.html
+
+
+* Create a separate session on ES6
+* freecodecamp.org => JavaScript ES6,ES7,ES8: Learn to code

@@ -1,0 +1,2 @@
+Close the browser. 
+use beforeunload event  and save the information.

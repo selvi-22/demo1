@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>List All Movies</h3>
+    <button onclick="loadMovies()">Load Movies</button>
+    <div id="movies">
+        <!-- List Movies-->
+    </div>
+    <script>
+        function loadMovies() {
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                    document.getElementById("movies").innerHTML = this.responseText;
+                }
+            }
+            xhr.open("GET", "http://www.omdbapi.com/?i=tt3896198&apikey=4e6494", true);
+            xhr.send();
+        }
+    </script>
+</body>
+
+</html>

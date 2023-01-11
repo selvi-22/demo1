@@ -1,0 +1,29 @@
+Hello World
+Package
+Naming Convention-small case, reverse order naming
+
+Class - blueprint - datamembers and functions
+Phone - software, colour,name, space, wireless, battery,camera - data members
+type of data it store - datatype
+Variable
+storing info
+Phone - software, colour,name, space, wireless, battery,camera - data members
+Variables
+Variable Declaration
+
+datatype variableName;
+int space;
+String color;
+boolean wireless;
+Value assignment for variable
+
+Variable initialization - a initial value, can be changed later.
+datatype variableName=initialValue;
+
+Naming conventions
+Package - 	
+Class - realtime entity, CapitalCamelCase
+Variable - relevant variablenames,sensible/meaningful,smallCamelCase
+
+
+//Create datamembers Class Bus, Food,

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Website</title>
+    <script>
+        function toHtmlPage() {
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            document.getElementById("demo").innerHTML = name + " " + age;
+        }
+    </script>
+</head>
+
+<body>
+
+    name : <input type="text" id="name" /> <br> age : <input type="text" id="age" /> <br>
+    <button onclick="toHtmlPage()">On the page</button>
+
+    <p id="demo"></p>
+
+</body>
+
+</html>

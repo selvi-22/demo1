@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My Page with JavaScript
+    </title>
+
+</head>
+
+<body>
+    <h2>Be ready to validate data</h2>
+    <form id="loginform" name="myform1" onsubmit="validateForm()" action="data.html">
+        Enter name:<input type="text" name="username" required id="username"><br>
+        Enter age: <input type="number" name="age" id="age" required><br />
+        dob: <input type="date" name="dob" id="dob" required>
+        <button type="submit"> Validate</button>
+    </form>
+    <script>
+        function validateForm() {
+            event.preventDefault();//to prevent the default behaviour of navigation
+            let username = document.querySelector("#username").value;
+            let ageStr = document.querySelector("#age").value;
+            let age = parseInt(ageStr);
+            let dob = document.querySelector("#dob").value; //2023-01-10//yyyy-MM-dd
+            let today = new Date();
+
+        
+            if (username ==null || username.trim() =="") {
+               //  alert("Username cannot be empty");
+                 return false;
+            }
+            else if (username.length<8){
+              //  alert("Username must be min 8 characters");
+                return false;
+            }
+            else if (  age <=0 || age>100){
+                alert("Age must be between 1 and 100");
+                return false;
+            }
+          
+            //compare todayDate > dob 
+            else{
+                alert("welcome" + username);
+            }
+            
+            let form = document.querySelector("#loginform");
+            form.submit();
+
+        
+        }
+    </script>
+</body>
+
+</html>

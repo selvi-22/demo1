@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>website</title>
+    <script>
+        window.addEventListener("load", () => {
+            document.getElementById("id").innerHTML = sessionStorage.getItem("id");
+            document.getElementById("uname").innerHTML = sessionStorage.getItem("username");
+            document.getElementById("fname").innerHTML = sessionStorage.getItem("firstName");
+            document.getElementById("lname").innerHTML = sessionStorage.getItem("lastName");
+            document.getElementById("email").innerHTML = sessionStorage.getItem("email");
+            document.getElementById("gender").innerHTML = sessionStorage.getItem("gender");
+            document.getElementById("location").innerHTML = sessionStorage.getItem("location");
+            document.getElementById("interests").innerHTML = sessionStorage.getItem("interests");
+
+
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Hi, <span id="uname"></span> !!!</h1>
+
+    <h2>Your Details</h2>
+    <h4>ID : <span id="id"></span></h4>
+    <h4>FirstName : <span id="fname"></span></h4>
+    <h4>LastName : <span id="lname"></span></h4>
+    <h4>Email : <span id="email"></span></h4>
+    <h4>Gender : <span id="gender"></span></h4>
+    <h4>Location : <span id="location"></span></h4>
+    <h4>Interests : <span id="interests"></span></h4>
+
+</body>
+
+</html>

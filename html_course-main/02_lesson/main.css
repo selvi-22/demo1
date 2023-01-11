@@ -1,0 +1,15 @@
+html {
+    font-size: 22px;
+}
+
+body {
+    background-color: rgb(218, 28, 28);
+    color: whitesmoke;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(10, 238, 21);
+}
+li{
+    color: blueviolet;
+}

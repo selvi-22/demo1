@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>input types - forms
+    </title>
+    <style>
+        <!--id selector-->
+        #para1
+        {
+        text-align:
+        center;
+        color:
+        red;
+        }
+    <!--class selector-->
+    .center {
+    text-align: center;
+    color: red;
+    }
+    <!--universal selector-->
+    * {
+    text-align: center;
+    color: blue;
+    }
+
+    </style>
+</head>
+
+<body>
+    <p id="para1">Hello World!</p>
+    <p>This paragraph is edited with id selector</p> 
+    <h1 class="center">This header is edited with class selctor</h1>
+    <p class="center">Class selector</p>
+
+    <form name="register" action="/login.html"><br>
+        Enter your name: <input type="text" name="name" required><br>
+        Enter ur email-id <input type="email" name="email"><br>
+        Enter ur DOB <input type="date" name="dob" min="2023-01-02" max="2023-01-10"><br>
+        Enter ur mobileNumber <input type="tel" name="mobileNumber"><br>
+        Select your gender <input type="checkbox" id="gender" value="gender" value="Male">
+        <lable for="gender" id="gender">male</lable>
+
+        <input type="checkbox" id="gender" value="gender" value="female">
+        <lable for="gender" id="gender">female</lable>
+
+        <input type="checkbox" id="gender" value="gender" value="Prefer not to say">
+
+        <lable for="gender" id="gender">prefer not to say</lable> <br>
+        price <input type="range" min="100" max="10000"><br>
+
+        Enter ur password <input type="password" name="password"><br>
+        Upload your photo <input type="file" name="photo"><br>
+        <input type="submit" value="Register"> <input type="reset" value="Cancel">
+
+    </form>
+</body>
+
+</html>

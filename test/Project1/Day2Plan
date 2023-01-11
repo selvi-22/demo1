@@ -1,0 +1,40 @@
+Create and test class
+Movie or
+Book
+Hospital
+The class must have only 5 properties
+Create a Test class and test the class and its methods
+--------
+Primitives - Default values, range
+
+When representing a float data type in Java, 
+we should append the letter f to the end of the data type; 
+otherwise it will save as double. 
+The default value of a float in Java is 0.0f. 
+Float data type is used when you want to save memory 
+and when calculations don't require more than 6 or 7 digits of precision.
+
+Datatype Range
+https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+
+\r	Carriage return (0x0d)
+\f	Formfeed (0x0c)
+\b	Backspace (0x08)
+\n	Newline (0x0a)
+\s	Space (0x20)
+\t	tab
+\"	Double quote
+\'	Single quote
+\\	backslash
+
+Object Creation 
+Create Class and Test with object
+Access specifier
+Import
+Scanner
+Local Variable
+
+Static
+Final
+Operators
+Assignment - related to access specifier, operators

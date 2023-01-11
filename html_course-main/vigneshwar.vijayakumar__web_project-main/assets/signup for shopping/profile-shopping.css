@@ -1,0 +1,237 @@
+body{
+	margin: 0;
+}
+.shipping{
+	text-align: center;
+	font-family: 'open sans', sans-serif;
+	background-color: #121a21;
+	color: #f6f6f6;
+	padding: 4px;
+}
+.header-navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: sticky;
+	z-index: 1;
+
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+.icons-info a{
+	text-decoration: none;
+    padding: 5px;	
+
+}
+.icons-info i{
+	color: #ff5757;
+	
+}
+
+.wrapper{
+	width: 1170px;
+	/* margin: 20px auto; */
+}
+nav > ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 1485px;
+	margin: 0 auto;
+	padding: 0;
+}
+nav{
+	position: absolute;
+	background: #eee;
+	font-size: 16px;
+}
+nav a{
+	display: block;
+	color: #ff5757;
+	text-decoration: none ;
+}
+nav ul li{
+	color: #ff5757;
+	list-style: none;
+	transition: 0.5s;
+}
+.bottom-color:hover{
+	border-bottom: 4px solid black;
+}
+
+nav > ul > li > a{
+	padding:30px;
+	font-family: 'league spartan', sans-serif;
+	font-size: 18px;
+}
+nav ul > li.dropdown > a:after{
+	position: relative;
+	float: right;
+	margin: 8px 10px 0px 0px;
+}
+nav > ul > li:hover{
+	background: white ;
+}
+nav ul.menu-area{
+	padding: 40px 40px 0px 40px;
+	background: white;
+	text-align: left;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+	z-index: 1;
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1405px;
+	top: -9999px;
+	left: 0;
+}
+nav ul li:hover ul.menu-area{
+	top: 100%;
+}
+nav ul.menu-area ul{
+	/* width: 15%; */
+	margin-bottom: 40px;
+	color: black;
+	
+}
+nav ul.menu-area h4{
+	/* margin-bottom: 15px; */
+	font-family: 'poppins', sans-serif;
+	text-decoration: underline;
+    text-align: left;
+}
+nav ul.menu-area ul li{
+	display: block;
+}
+nav ul.menu-area ul li a{
+	margin-top: 10px;
+	color: rgb(121, 113, 113);
+	font-family: 'open sans', sans-serif;
+	text-transform: none;
+}
+nav ul.menu-area ul li a:hover{
+	color: red;
+}
+/* completed dropdown */
+
+.welcome{
+   padding: 80px 0px 0px 0px;
+   text-align: center;
+}
+.welcome h2{
+    font-family: 'poppins', sans-serif;
+    font-size: 25px;
+}
+.welcome h2 span{
+    color: #ff5757;
+}
+.welcome h3{
+    font-family: 'open sans', sans-serif;
+}
+
+
+
+
+
+
+
+.all-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-pic{
+    background-image: url(https://ca.slack-edge.com/T032648LE-U041V7P984S-b1b403a99830-512);
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    vertical-align: middle;
+    text-align: center;
+    color: transparent;
+    transition: all .3s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+.profile-pic:hover {
+    background-color: rgba(0,0,0,.5);
+    z-index: 10000;
+    color: #fff;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+
+.profile-pic span {
+    display: inline-block;
+    padding-top: 4.5em;
+    padding-bottom: 4.5em;
+}
+
+form input[type="file"] {
+          display: none;
+          cursor: pointer;
+}
+h4{
+    text-align: center;
+}
+.profile{
+    line-height: 3;
+}
+.profile input{
+    padding: 10px;
+    width: 276px;
+    border-radius: 3px;
+    border: 2px solid #eee;
+}
+.profile select{
+    padding: 10px;
+    width: 300px;
+    border-radius: 3px;
+    border: 2px solid #eee;
+}
+.account, .tickets h1 {
+    font-family: 'league spartan', sans-serif;
+    font-size: 25px;
+}
+.btn-done button{
+    padding: 10px;
+    color: white;
+    background-color: #1c314d;
+    border: none;
+    border-radius: 3px;
+    width: 300px;
+    font-family: 'poppins',sans-serif;
+    cursor: pointer;
+}
+.input-field{
+    font-family: 'poppins', sans-serif;
+}
+.profile input[type=email]:focus{
+    outline: 2px solid #ff5757;
+}
+.profile input[type=password]:focus{
+    outline: 2px solid #ff5757;
+}
+.profile input[type=tel]:focus{
+    outline: 2px solid #ff5757;
+}
+.profile input[type=text]:focus{
+    outline: 2px solid #ff5757;
+}
+.profile select:focus{
+    outline: 2px solid #ff5757;
+}
+h3, h4{
+    font-family: 'open sans', sans-serif;
+}
+.privacy p{
+    width: 300px;
+    font-family: 'poppins', sans-serif;
+}
+.tickets{
+   text-align: center;
+}

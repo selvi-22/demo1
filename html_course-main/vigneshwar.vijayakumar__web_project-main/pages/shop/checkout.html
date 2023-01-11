@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset='UTF-8'>
+	<link rel="icon" type="image/x-icon" href="../../assets/images/favicon.png">
+
+<title> Checkout - Shop - Global Fun City</title>
+<link rel="stylesheet" href="../../assets/store css/checkout.css" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Pen+Script&family=Open+Sans:wght@700&family=Poppins:wght@300;500&family=Reem+Kufi&family=Sacramento&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+<div class="bag">
+   <a href="../../pages/shop/cart.html"> <h3> <i class="fa-solid fa-angle-left"></i> My Bag </h3> </a>
+</div>
+
+<div class="shop-logo">
+    <img src="../../assets/images/global-shop-logo.png" width="250" alt="shop-logo"/>
+</div>
+
+<div class="checkout">
+        <h1>Checkout</h1>
+</div>
+
+<!--div for billing details-->
+<div class="billing-details-orders-payments">
+<div class="billing-details-of-users">
+<div class="billing">
+    <h1>Complete Your Order</h1>
+</div>
+
+<div class="first-last-name">
+<div class="first-name">
+        <p>First name <g>*</g></p>
+        <input type="text" id="username" name="firstname" required></div>
+        &nbsp; &nbsp;
+<div class="last-name">        
+        <p>Last name <g>*</g></p>
+        <input type="text" id="password" name="lastname" required>
+</div>
+</div>
+
+<div class="content-of-others">
+    <p>Country/Region <g>*</g></p>
+        
+        <select required>
+            <option value="india">India</option>
+            <option value="australia">Australia</option>
+            <option value="switzerland">Switzerland</option>
+            <option value="united-states-of-america">United States of America</option>
+            <option value="russia">Russia</option>
+            <option value="germany">Germany</option>
+            <option value="belgium">Belgium</option>
+            <option value="srilanka">Srilanka</option>
+            <option value="japan">Japan</option>
+            <option value="china">China</option>
+            <option value="norway">Norway</option>
+            <option value="poland">Poland</option>
+            <option value="pakisthan">Pakisthan</option>
+            <option value="ukrain">Ukrain</option>
+            <option value="netherland">Netherland</option>
+            <option value="africa">Africa</option>
+            <option value="britain">Britain</option>
+            <option value="england">England</option>
+            <option value="georgia">Gerogia</option>
+            <option value="france">France</option>
+        </select>
+
+        <p>Door.No <g>*</g></p>
+        <input type="text" id="door-no" name="door-no" required>
+
+        <p>Street address <g>*</g></p>
+        <input type="text" id="door-no" name="door-no" required>
+
+        <p>Town/City <g>*</g></p>
+        <input type="text" id="town-city" name="town-city" required>
+
+        <p>State <g>*</g></p>
+        <input type="text" id="state" name="state" required>
+
+        <p>ZIP Code <g>*</g></p>
+        <input type="text" id="code" name="code" required>
+
+        <p>Phone <g>*</g></p>
+        <input type="tel" id="phone" name="phone" required>
+
+        <p>Email address <g>*</g></p>
+        <input type="email" id="email" name="email" required>
+
+        <p>Order notes (optional)</p>
+        <input type="text" id="order-notes" name="order-notes">
+
+</div>
+</div>
+
+
+<!--To link the orders & payment-->
+<div class="orders-payments">
+<div class="your-order">
+    <h1>Your Orders</h1>
+</div>
+
+<table class="orders">
+    <tr>
+        <th id="t-shirt">White T-shirt With Logo x 1</th>
+        <th id="price">$199.00</th>
+    </tr>
+
+    <tr>
+        <th id="t-shirt">Black T-Shirt with Events x 1</th>
+        <th id="price">$299.00</th>
+    </tr>
+
+    <tr>
+        <th id="total">Total</th>
+        <th id="price">$498.00</th>
+    </tr>
+</table>
+
+<div class="payto-shirts">
+    <h1>Payment</h1>
+</div>
+
+<div class="tickets">
+    <ul>
+
+            <li><input type="radio" name="payment-method"> Credit Card/Debit Card </li>    
+        <li><input type="radio" name="payment-method">
+        Paytm</li>
+        <li><input type="radio" name="payment-method"> Google pay </li>
+        
+    </ul>
+    <a href="../../pages/shop/proceedcheckout.html"><button class="btn-proceed">Proceed</button></a>
+    <a href="../../pages/shop/shop.html"> <button class="btn-cancel">Cancel Order</button></a>
+</div>
+</div>
+</div>
+
+
+<footer>
+    <div class="background-footer">
+    
+    <div class="navbar-footer-logo">
+        <img src="../../assets/images/globalfuncitylogo.png" width="200" alt="logo"/>
+    </div>
+    
+    <div class="address">
+        <p>11113 W Baldwin RD, Monrovia, MD 21770, USA</p>
+        <h4><i class="fa-solid fa-phone"></i> +1 860 817 1080</h4>
+        <h4><i class="fa-solid fa-envelope"></i> info@globalfuncity.in</h4>
+    </div>
+    
+    <div class="other-policies">
+        <a href="#" >Book now Policy</a>
+    </div>
+    </div>
+
+
+
+
+    
+
+</body>
+</html>    

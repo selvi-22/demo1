@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <h3>Events</h3>
+    <button>Act-once button</button>
+    <script>
+            let button = document.querySelector("button");
+            function once() {
+                console.log("Done.");
+                button.removeEventListener("click", once);
+            }
+            button.addEventListener("click", once);
+            //It attaches a handler to the button node
+        </script>
+</body>
+
+</html>

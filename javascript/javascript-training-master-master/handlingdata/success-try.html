@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My Page with JavaScript
+    </title>
+
+</head>
+
+<body>
+    <h2>Be ready to validate data</h2>
+    <form id="loginform" name="myform1" onsubmit="validateForm()" action="" method="GET">
+        Enter name:<input type="text" name="username" required id="username"><br>
+        Enter age: <input type="number" name="age" id="age"><br />
+        dob: <input type="date" name="dob" id="dob">
+        <button type="submit"> Validate</button>
+    </form>
+    <script>
+        function validateForm() {
+            event.preventDefault();//to prevent the default behaviour of navigation
+            let username = document.querySelector("#username").value;
+            let ageStr = document.querySelector("#age").value;
+            let age = parseInt(ageStr);
+            let dob = document.querySelector("#dob").value; //2023-01-10
+            let today = new Date();
+
+            try{
+                    //throw new Error("Username cannot be empty"); //test
+                    if (username ==null || username.trim() =="") {
+                        throw new Error("Username cannot be empty");
+                    }
+                    else if (username.length<8){
+                        throw new Error("Username must be min 8 characters")
+                    } else if (ageStr ==null || ageStr.trim() =="") {
+                        throw new Error("Age cannot be empty");
+                    }
+                    else if (age <=0 || age>100){
+                        throw new Error("Age must be between 1 and 100");
+                    }
+                    else if (dob ==null || dob.trim()==""){
+                        throw new Error("date of birth cannot be empty");
+                    
+                    }
+                    //compare todayDate > dob 
+                    
+                    //validation passed
+
+                        alert("welcome" + username);
+                
+                    let form = document.querySelector("#loginform");
+                    form.submit();
+
+                }
+                //catch(Exception err) => err.getMessage()
+                catch(err){
+                    console.error(err);
+                    console.log("Validation FAiled:" + err.message);
+                    alert("Error:"+ err.message);
+                }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../../assets/css/authentication/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="icon" type="image/png" sizes="60x32" href="../../assets/images/tabicon/icon.png">
+    <title>AgroKart - Ecommerce</title>
+</head>
+
+<body>
+
+    <p class="login-logo">Agrokart</p>
+
+    <div class="login-main">
+
+        <div class="login-form">
+
+            <form action="../order/place_order.html" method="">
+
+                <p class="act">Log in</p>
+
+                <label for="email-number">Email id</label>
+                <input type="text" id="email" placeholder="Enter Your Email id" required value="hemanath7867@gmail.com">
+
+                <label for="login-password">Password</label>
+                <input type="password" id="password" placeholder="Enter Your Password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}$" required maxlength="10" minlength="8" title="Please give one uppercase, one lowercase, one special character and one number miniumum is 8 character maxium 10 characters" required value="Hem@nath78">
+
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+
+                <button type="submit">Continue</button>
+
+                <p class="dont-have">Don't have an account?</p>
+                <a href="register.html" class="register-here">Create Account</a>
+            </form>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+<script>
+
+const email = (document.getElementById("email").value );
+
+const password = (document.getElementById("password").value );
+
+console.log(email);
+console.log(password);
+
+
+</script>
+
+</html>

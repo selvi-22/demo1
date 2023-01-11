@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Register Page</title>
+    <script>
+        // document.getElementById("btn").addEventListener("click", validatePasword)
+
+        function validatePassword() {
+            if (document.getElementById("password").value == document.getElementById("retypePassword").value) {
+                addUser();
+            } else {
+                alert("password not same");
+            }
+        }
+
+        async function addUser() {
+            var data = {}
+
+            data.firstName = document.getElementById("firstName").value;
+            data.lastName = document.getElementById("lastName").value;
+            data.username = document.getElementById("username").value;
+            data.password = document.getElementById("password").value;
+            data.email = document.getElementById("email").value;
+
+            if (document.getElementById("male").checked) {
+                data.gender = document.getElementById("male").value;
+            } else if (document.getElementById("female").checked) {
+                data.gender = document.getElementById("female").value;
+            }
+
+            var element = document.getElementById("location");
+            data.location = element.options[element.selectedIndex].value;
+
+            var checkboxes = document.getElementsByName("interests");
+
+            data.interests = []
+            let index = 0
+
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (checkboxes[i].checked) {
+                    data.interests[index] = checkboxes[i].value;
+                    index++
+                }
+            }
+
+            let response = await fetch("http://localhost:3000/users", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+
+            });
+
+            if (response.status == 201) {
+                alert("User is added sucessfully")
+                window.location.href = "login.html"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Register</h1>
+    <h3>First Name : <input type="text" id="firstName" required="true"/> </h3>
+    <h3>Last Name : <input type="text" id="lastName" /></h3>
+    <h3>User Name: <input type="text" id="username" /></h3>
+    <h3>Email: <input type="email" id="email" /></h3>
+    <h3>Password : <input type="password" id="password" /></h3>
+    <h3>Retype Password : <input type="password" id="retypePassword" /></h3>
+    <h3>Gender : <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+    </h3>
+    <h3>
+        Location :
+        <select name="location" id="location">
+            <option value="Chennai">Chennai</option>
+            <option value="Pune">Pune</option>
+            <option value="Nagpur">Nagpur</option>
+            <option value="Bhopal">Bhopal</option>
+          </select>
+    </h3>
+    <h3> Interests : <br>
+        <input type="checkbox" id="interest1" name="interests" value="Technology"> <label for="interest1">Technology</label> <br>
+        <input type="checkbox" id="interest2" name="interests" value="Painting"> <label for="interest2">Painting</label> <br>
+        <input type="checkbox" id="interest3" name="interests" value="Art"> <label for="interest3">Art</label> <br>
+        <input type="checkbox" id="interest4" name="interests" value="Music"><label for="interest4">Music</label> <br>
+        <input type="checkbox" id="interest5" name="interests" value="Dance"><label for="interest5">Dance</label> <br>
+        <input type="checkbox" id="interest6" name="interests" value="Cinemas"><label for="interest6">Cinemas</label> <br>
+        <input type="checkbox" id="interest7" name="interests" value="Games"><label for="interest7">Games</label> <br>
+    </h3>
+
+    <button onclick="validatePassword()">Register</button>
+
+    <h3>Known Buddy! Click <a href="login.html">here</a> to login</h3>
+
+</body>
+
+</html>

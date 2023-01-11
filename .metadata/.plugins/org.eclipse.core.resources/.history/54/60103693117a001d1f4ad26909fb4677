@@ -1,0 +1,29 @@
+package com.chainsys.w5.day22;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class ProductTest1 {
+	public static void main(String args[]) {
+		List<Product> productList = new ArrayList<Product>();
+		productList.add(new Product(1, "La", 139000));//1
+		productList.add(new Product(2, "Mobile", 10000));//2
+		productList.add(new Product(3, "HP", 30000));//3
+		productList.add(new Product(4, "Tablet", 45000));//4
+		productList.add(new Product(5, "Monitor", 3000));
+
+		List<Integer> productPrice = productList.stream().filter(i -> i.price < 30000).map(p -> p.price)
+				.collect(Collectors.toList());
+		System.out.println(productPrice);
+
+		List<Product> productNameList = productList.stream().filter(i -> i.name.length() < 7)
+				.collect(Collectors.toList());
+		System.out.println(productNameList);
+
+		Optional<Product> count = productNameList.stream().filter(i -> i.price>5000).findFirst();
+		System.out.println(count);
+	}
+}

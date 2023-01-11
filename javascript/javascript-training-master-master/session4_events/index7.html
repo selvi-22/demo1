@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h3>Event Objects </h3>
+    <p>A paragraph with a <button>button</button>.</p>
+    <script>
+        let para = document.querySelector("p");
+        let button = document.querySelector("button");
+        para.addEventListener("mousedown", () => {
+            console.log("Handler for paragraph.");
+        });
+        button.addEventListener("mousedown", event => {
+            console.log("Handler for button.");
+            if (event.button == 2) event.stopPropagation();
+        });
+        /*
+        For most event types, handlers registered on nodes with children will also receive events that happen in the children. If a button inside a paragraph is
+clicked, event handlers on the paragraph will also see the click event.
+But if both the paragraph and the button have a handler, the more specific
+handler—the one on the button—gets to go first. The event is said to propagate
+outward, from the node where it happened to that node’s parent node and on to the root of the document. Finally, after all handlers registered on a specific
+node have had their turn, handlers registered on the whole window get a chance
+to respond to the event.
+At any point, an event handler can call the stopPropagation method on the
+event object to prevent handlers further up from receiving the event.
+*/
+    </script>
+</body>
+
+</html>

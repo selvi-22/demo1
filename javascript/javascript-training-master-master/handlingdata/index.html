@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My Page with JavaScript
+    </title>
+
+</head>
+
+<body>
+    <h2>Be ready to handle data</h2>
+    <form name="myform1" onsubmit="validateForm()" action="new.html">
+        Enter name:<input type="text" name="username" required id="username"><br>
+        Enter age: <input type="number" name="age" id="age"><br />
+        dob: <input type="date" name="dob" id="dob">
+        <button type="submit"> Validate</button>
+    </form>
+    <script>
+        function validateForm() {
+            event.preventDefault();//to prevent the default behaviour of navigation
+            let username = document.querySelector("#username").value;
+            let age = document.querySelector("#age").value;
+            let dob = document.querySelector("#dob").value;
+            
+            alert("welcome" + username);
+            alert(age+"  "+dob);
+        }
+    </script>
+</body>
+
+</html>

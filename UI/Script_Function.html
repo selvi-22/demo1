@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <script>
+        function changeInnerHtml() {
+            console.log(document.getElementById("demo").textContent)
+            document.getElementById("demo").innerHTML = "changed, Hi this is Selvi"
+            document.getElementById("demo1").innerHTML = "adding now"
+        }
+
+        function show() {
+            var f = document.getElementById("fname").value
+            var l = document.getElementById("lname").value
+            document.getElementById("printHere").innerHTML = "Full Name is " + f + " " + l
+        }
+    </script>
+</head>
+
+<body>
+
+    <input type="text" id="fname" required/>
+    <input type="text" id="lname" required/>
+    <button onclick="show()"> Take the values in the form and print it down the same html</button>
+    <p id="printHere"></p>
+
+
+
+    <p id="demo"> This is para</p>
+    <p id="demo1"></p>
+    <button onclick="changeInnerHtml()"> Change Inner HTML</button>
+
+</body>
+
+</html>

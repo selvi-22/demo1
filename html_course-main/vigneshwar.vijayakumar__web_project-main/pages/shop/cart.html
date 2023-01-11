@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='UTF-8'>
+	<link rel="icon" type="image/x-icon" href="../../assets/images/favicon.png">
+<title> Cart - Global Fun City </title>
+<link rel="stylesheet" href="../../assets/store css/cart.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nanum+Pen+Script&family=Open+Sans:wght@700&family=Poppins:wght@300;500&family=Reem+Kufi&family=Sacramento&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Poppins:wght@300;500&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+
+    <div class="shipping">
+        <p>Free Shipping on orders of $99 or more! Code: SHIPGLOBAL</p>
+    </div>
+    
+    <!-- div for shop logo & others -->
+    <div class="header-navbar">
+    
+    <div class="icons-info">
+        <a href="../../index.html"><i class="fa-sharp fa-solid fa-house"></i> &nbsp; Back to Home </a> &nbsp;
+        <a href=""><i class="fa-solid fa-phone"></i> &nbsp; Contact </a> 
+        <a href=""><i class="fa-brands fa-cc-visa"></i> &nbsp; Global Visa Card </a>
+    </div>	
+    
+    <div class="logo-global">
+        <a href=""><img src="../../assets/images/global-shop-logo.png" width="210" alt="global-shop-logo"/></a>
+    </div>
+    
+    <div class="icons-info">
+        <a href="../../pages/signup for shopping/signup_shop.html"> <i class="fa-solid fa-user"></i> &nbsp; Sign In | Sign Up </a> &nbsp;
+        <a href=""> <i class="fa-solid fa-heart"></i> &nbsp; My Wishlist (2)</a> &nbsp;
+        <a href="../../pages/shop/cart.html"> <i class="fa-solid fa-bag-shopping"></i> &nbsp; My Bag (2)</a>
+    </div>
+    </div>
+
+
+<div class="background-color">
+
+    <div class="cart">
+        <h1>My Bag</h1>
+    </div>
+
+<table class="product-table">
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Size</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+        <th>Remove</th>
+    </tr>
+    
+    <tr>
+        <td><img src="../../assets/images/shopping/t-shirt.jpg" width="150px" height="130px" alt="White-T-Shirt"/> <p>White-T-Shirt with Logo</p></td>
+        <td>$199.00</td>
+        <td>M</td>
+        <td><input type="number" id="quantity" name="quantity"
+            placeholder="1" min="0" max="100"></td>
+        <td>$199.00</td>
+        <td><a href="../../pages/shop/shop.html"><i class="fa-solid fa-xmark"></i></a></td>
+        </tr>
+       
+        <tr>
+            <td><img src="../../assets/images/shopping/black.jpg" width="150px" height="130px" alt="White-T-Shirt"/> <p>Black-T-Shirt with Events</p></td>
+            <td>$299.00</td>
+            <td>XL</td>
+            <td><input type="number" id="quantity" name="quantity"
+                placeholder="1" min="0" max="100"></td>
+            <td>$299.00</td>
+            <td><a href="../../pages/shop/shop.html"><i class="fa-solid fa-xmark"></i></a></td>
+            </tr>
+</table> 
+
+<button class="btn-shopping"><a href="../../pages/shop/shop.html"> Continue Shopping </a></button>
+
+
+
+<div class="order-of-summary">
+<div class="cart-details">
+    <h2>Order of Summary</h2>
+</div>
+
+<table class="card-totals">
+    <tr>
+        <th id="total">Subtotals</th>
+        <th id="price">$498.00</th>
+    </tr>
+
+    <tr>
+        <th id="total">Total</th>
+        <th id="price">$498.00</th>
+    </tr>
+</table>
+
+<button class="btn-checkout"><a href="../../pages/shop/checkout.html">Proceed to Checkout </a></button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<footer>
+    <div class="background-footer">
+    
+    <div class="navbar-footer-logo">
+        <img src="../../assets/images/globalfuncitylogo.png" width="200" alt="logo"/>
+    </div>
+    
+    <div class="address">
+        <p>11113 W Baldwin RD, Monrovia, MD 21770, USA</p>
+        <h4><i class="fa-solid fa-phone"></i> +1 860 817 1080</h4>
+        <h4><i class="fa-solid fa-envelope"></i> info@globalfuncity.in</h4>
+    </div>
+    
+    <div class="other-policies">
+        <a href="#" >Book now Policy</a>
+    </div>
+    </div>
+
